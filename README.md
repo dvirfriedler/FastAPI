@@ -20,10 +20,10 @@ To run the projects in this repository, you will need to set up your environment
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/your-repository-name.git
+git clone https://github.com/dvirfriedler/FastAPI
 
 # Navigate into the project directory
-cd your-repository-name
+cd FastAPI-Tutorial
 
 # Install required dependencies
 pip install -r requirements.txt
