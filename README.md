@@ -1,4 +1,4 @@
-# FastAPI Coursework Repository
+# FastAPI Coursework Repository - NOT FINISHED
 
 ## About This Repository
 
@@ -30,3 +30,5 @@ pip install -r requirements.txt
 
 # Run the application
 uvicorn main:app --reload
+
+
