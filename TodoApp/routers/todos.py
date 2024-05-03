@@ -6,7 +6,6 @@ from models import Todos
 from database import engine , SessionLocal
 from starlette import status
 from todoRequest import TodoRequest
-from routers import auth, todos
 
 
 
