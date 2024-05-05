@@ -1,5 +1,4 @@
-from datetime import timedelta
-import datetime
+from datetime import timedelta, datetime
 from typing import Annotated
 from fastapi import Depends, FastAPI, APIRouter, HTTPException
 from pydantic import BaseModel
@@ -11,10 +10,11 @@ from models import Users
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from jose import JWTError, jwt
 
-router = APIRouter()
+router = APIRouter(prefix="/auth"
+                   , tags=["auth"])
 
 bcyrpt_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-oauth2_bearer = OAuth2PasswordBearer(tokenUrl="token")
+oauth2_bearer = OAuth2PasswordBearer(tokenUrl="auth/token")
 
 
 SECRET_KEY = "28d1badfbd41ac87a524badff22f2b438c1e5337a97888466900e5539657c481"
@@ -45,6 +45,7 @@ def authenticate_user(username: str, password: str, db):
 def create_access_token(username: str,user_id: int, expires_delta: timedelta):
     encode = {"sub": username, "user_id": user_id}
     expires = datetime.utcnow() + expires_delta
+    encode.update({'exp': expires})
     return jwt.encode(encode, SECRET_KEY, algorithm=ALGORITHM)
 
 
@@ -75,7 +76,7 @@ class Token(BaseModel):
     token_type: str
     
 
-@router.post("/auth/",status_code=status.HTTP_201_CREATED)
+@router.post("/",status_code=status.HTTP_201_CREATED)
 async def create_user(db: db_dependency, 
                       create_user_request: CreateUserRequest):
     try:
@@ -98,7 +99,7 @@ async def create_user(db: db_dependency,
         
         
     
-@router.post("/token,", response_model=Token)
+@router.post("/token", response_model=Token)
 async def login(from_data: Annotated [OAuth2PasswordRequestForm , Depends()],
                 db : db_dependency):
     
