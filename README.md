@@ -4,6 +4,7 @@
 
 This repository contains all the coding exercises and projects that I am working on as part of the FastAPI course on Udemy. The purpose of this repository is to document my learning progress and showcase my understanding of FastAPI's capabilities.
 All the code written in this repository was written by me, and the projects here were developed according to CI/CD methodologies.
+The main project is inside the TodoApp folder
 
 ## Projects Overview
 
