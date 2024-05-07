@@ -14,6 +14,9 @@ The course covers a wide range of topics within FastAPI, including:
 - **Database Integration**: Connecting to databases and performing CRUD operations.
 - **Authentication and Authorization**: Implementing security measures to protect APIs.
 
+  ![Screenshot 2024-05-07 at 10 15 47](https://github.com/dvirfriedler/FastAPI/assets/101118398/55d911a6-2601-4829-98e9-3e90a548947f)
+
+
 ## Installation
 
 To run the projects in this repository, you will need to set up your environment properly. Here are the steps to get started:
