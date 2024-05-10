@@ -2,3 +2,12 @@ __pycache__/
 FastAPI+Slides.pdf
 fastapienv/
 FastAPI/
+
+
+# Ignore Python bytecode
+__pycache__/
+*.pyc
+
+# Ignore virtual environments
+venv/
+*.venv/
