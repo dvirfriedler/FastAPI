@@ -5,8 +5,8 @@ from pydantic import BaseModel
 from starlette import status
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
-from database import SessionLocal
-from models import Users
+from ..database import SessionLocal
+from ..models import Users
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from jose import JWTError, jwt
 

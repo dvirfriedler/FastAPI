@@ -1,11 +1,10 @@
 from fastapi import Depends, HTTPException, Path, Query, APIRouter
 from typing import Annotated
 from sqlalchemy.orm import Session
-import models
-from models import Todos,Users
-from database import engine , SessionLocal
+from ..models import Todos,Users
+from ..database import engine , SessionLocal
 from starlette import status
-from todoRequest import TodoRequest
+from ..todoRequest import TodoRequest
 from .auth import get_current_user, bcyrpt_context
 
 
@@ -13,7 +12,6 @@ from .auth import get_current_user, bcyrpt_context
 
 router = APIRouter(prefix="/admin"
                    , tags=["admin"])
-models.Base.metadata.create_all(bind=engine)
 
 def get_db():
     db = SessionLocal()
