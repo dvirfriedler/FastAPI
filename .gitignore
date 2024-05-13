@@ -11,3 +11,6 @@ __pycache__/
 # Ignore virtual environments
 venv/
 *.venv/
+
+# Ignore debugging files
+.vscode/
