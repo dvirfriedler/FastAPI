@@ -1,4 +1,6 @@
-from fastapi import Depends, HTTPException, Path, Query, APIRouter
+
+
+from fastapi import Depends, HTTPException, Path, Query, APIRouter, Request
 from typing import Annotated
 from sqlalchemy.orm import Session
 from ..models import Todos
@@ -6,10 +8,15 @@ from ..database import engine , SessionLocal
 from starlette import status
 from ..todoRequest import TodoRequest
 from .auth import get_current_user
+from fastapi.responses import HTMLResponse
+from fastapi.templating import Jinja2Templates
 
 
 
 router = APIRouter()
+
+
+
 
 
 def get_db():
@@ -20,8 +27,14 @@ def get_db():
         db.close()
         
 db_dependency = Annotated[Session, Depends(get_db)]
-
 user_dependency = Annotated[dict, Depends(get_current_user)]
+
+
+templates = Jinja2Templates(directory="TodoApp/templates")
+
+@router.get("/test")
+async def test(request: Request):
+    return templates.TemplateResponse("home.html", {"request": request})
     
         
 @router.get("/", status_code=status.HTTP_200_OK)
