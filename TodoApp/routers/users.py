@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 from ..models import Todos,Users
 from ..database import engine , SessionLocal
 from starlette import status
-from ..todoRequest import TodoRequest
+from .todos import TodoRequest
 from .auth import get_current_user, bcyrpt_context
 
 
