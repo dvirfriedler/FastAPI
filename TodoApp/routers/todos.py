@@ -9,9 +9,6 @@ from starlette import status
 from .auth import get_current_user
 from pydantic import BaseModel, Field
 
-
-
-
 router = APIRouter()
 
 
@@ -96,5 +93,3 @@ async def delete_todo(user: user_dependency,
         db.commit()
         return
     raise HTTPException(status_code=404, detail="Todo not found")
-
-
