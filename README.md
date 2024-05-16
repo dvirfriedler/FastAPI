@@ -16,8 +16,7 @@ The Project covers a wide range of topics within FastAPI, including:
 - **Database Integration**: Connecting to databases and performing CRUD operations.(MySQL,SQLite,PostgreSQL)
 - **Authentication and Authorization**: Implementing security measures to protect APIs.
 
-  ![Screenshot 2024-05-07 at 10 15 47](https://github.com/dvirfriedler/FastAPI/assets/101118398/55d911a6-2601-4829-98e9-3e90a548947f)
-
+![Screenshot 2024-05-16 at 13 18 33](https://github.com/dvirfriedler/FastAPI/assets/101118398/f1cd5a3b-3b8d-4f6b-bc95-07a3aad42b82)
 
 ## Installation
 
