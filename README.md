@@ -15,6 +15,8 @@ The Project covers a wide range of topics within FastAPI, including:
 - **Data Validation and Serialization**: Using Pydantic models for robust data handling.
 - **Database Integration**: Connecting to databases and performing CRUD operations.(MySQL,SQLite,PostgreSQL)
 - **Authentication and Authorization**: Implementing security measures to protect APIs.
+- **Testing**: Unit test with pytest
+
 
 ![Screenshot 2024-05-16 at 13 18 33](https://github.com/dvirfriedler/FastAPI/assets/101118398/f1cd5a3b-3b8d-4f6b-bc95-07a3aad42b82)
 
