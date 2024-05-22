@@ -33,6 +33,36 @@ cd FastAPI-Tutorial
 pip install -r requirements.txt
 
 # Run the application
-uvicorn main:app --reload
+uvicorn TodoApp.main:app --reload
+
+# To view the automatically generated interactive API documentation, open your browser and go to:
+http://127.0.0.1:8000/docs
+
+### Project Architecture Explanation
+
+At the root of the TodoApp project, you will find the following structure:
+
+- **router folder**: Contains files for each router.
+- **test folder**: Contains tests for each router.
+- **database.py file**: Responsible for connecting the project to the database (more details provided later).
+- **main.py file**: The entry point to the project.
+- **models.py file**: Responsible for defining models for the different database tables.
+
+Inside the router folder, you will find four files for the different routers in the project:
+- **admin.py**: Contains the router for the admin section.
+- **auth.py**: Contains the router for authentication when the user logs in.
+- **todos.py**: Contains the router that enables deleting, adding, and changing the user's todos.
+- **users.py**: Contains the router responsible for the user's information.
+
+
+Inside the test folder you will see all the different files of the test for the project
+
+
+
+
+
+
+
+
 
 
