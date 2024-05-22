@@ -2,9 +2,7 @@
 
 ## About This Repository
 
-This repository contains all the coding exercises and projects that I am working on as part of the FastAPI course on Udemy. The purpose of this repository is to document my learning progress and showcase my understanding of FastAPI's capabilities.
-All the code written in this repository was written by me, and the projects here were developed according to CI/CD methodologies.
-The main project is inside the TodoApp folder
+This repository contains a REST API project developed using the FastAPI framework. The purpose of this repository is to provide a base project for individuals who want to develop a REST API for their application and have some knowledge of FastAPI, but are not experts in the field.
 
 ## Projects Overview
 
@@ -15,7 +13,7 @@ The Project covers a wide range of topics within FastAPI, including:
 - **Data Validation and Serialization**: Using Pydantic models for robust data handling.
 - **Database Integration**: Connecting to databases and performing CRUD operations.(MySQL,SQLite,PostgreSQL)
 - **Authentication and Authorization**: Implementing security measures to protect APIs.
-- **Testing**: Unit test with pytest
+- **Testing**: Unit and Integration tests with pytest
 
 
 ![Screenshot 2024-05-16 at 13 18 33](https://github.com/dvirfriedler/FastAPI/assets/101118398/f1cd5a3b-3b8d-4f6b-bc95-07a3aad42b82)
