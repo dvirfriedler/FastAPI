@@ -6,6 +6,7 @@ This repository contains a REST API project developed using the FastAPI framewor
 
 ## Projects Overview
 
+
 The Project covers a wide range of topics within FastAPI, including:
 
 - **API Design**: Structuring endpoints effectively.
@@ -26,6 +27,7 @@ To run the projects in this repository, you will need to set up your environment
 # Clone the repository
 git clone https://github.com/dvirfriedler/FastAPI
 
+
 # Navigate into the project directory
 cd FastAPI-Tutorial
 
@@ -37,8 +39,9 @@ uvicorn TodoApp.main:app --reload
 
 # To view the automatically generated interactive API documentation, open your browser and go to:
 http://127.0.0.1:8000/docs
+```
 
-### Project Architecture Explanation
+## Projects Architecture Explanation
 
 At the root of the TodoApp project, you will find the following structure:
 
