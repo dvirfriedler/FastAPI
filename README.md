@@ -86,6 +86,19 @@ Inside the router folder, you will find four files for the different routers in 
 
 Inside the test folder you will see all the different files of the test for the project
 
+
+## Request Handling
+
+The project efficiently manages different types of client requests. Here's an overview of how various requests are handled:
+
+- **GET Requests**: Retrieve data from the server. For example, fetching the list of todos or user details.
+- **POST Requests**: Send data to the server to create new records. For example, adding a new todo item or registering a new user.
+- **PUT Requests**: Update existing records on the server. For example, editing a todo item or updating user information.
+- **DELETE Requests**: Remove records from the server. For example, deleting a todo item or removing a user account.
+
+The API ensures proper validation and error handling for all request types, ensuring a smooth and reliable user experience.
+
+
 ## Database Integration
 
 To connect the project to your own database, follow these steps:
@@ -146,3 +159,13 @@ To run the tests, open the terminal, navigate to the `TodoApp` directory, and ex
 ```bash
 pytest
 ```
+
+## Connect
+
+If you have any questions, suggestions, or would like to connect regarding this project, feel free to reach out to me. Here are my contact details:
+
+- **Email**: dvir.friedler@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/dvir-friedler-225211128/
+- **GitHub**: https://github.com/dvirfriedler
+
+I look forward to connecting with you!
