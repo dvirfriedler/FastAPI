@@ -1,10 +1,33 @@
-# FastAPI Coursework Repository - NOT FINISHED
+# FastAPI Coursework Repository
 
 ## About This Repository
 
 This repository contains a REST API project developed using the FastAPI framework. The purpose of this repository is to provide a base project for individuals who want to develop a REST API for their application and have some knowledge of FastAPI, but are not experts in the field.
 
-## Projects Overview
+## Project Overview
+
+The project is a REST API for a Todo List application. Each user of this application has a personal list of todos, and they can add, edit, and remove items from their list.
+
+## User Information
+
+Each user has the following information:
+- **ID**
+- **Username**
+- **Email**
+- **First Name**
+- **Last Name**
+- **Password**
+- **Role** (user/admin)
+- **Phone Number**
+
+## Todo Item Details
+
+Each todo item includes the following details:
+- **Title**
+- **Description**
+- **Priority**
+- **Completed** (True/False)
+- **Owner ID** (refers to the user ID)
 
 
 The Project covers a wide range of topics within FastAPI, including:
